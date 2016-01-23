@@ -1,0 +1,32 @@
+{
+  "name": "reactProject",
+  "version": "1.0.0",
+  "description": "react demo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duvet86/react.git"
+  },
+  "keywords": [
+    "react",
+    "java",
+    "spring"
+  ],
+  "author": "luca marangon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duvet86/react/issues"
+  },
+  "homepage": "https://github.com/duvet86/react#readme",
+  "dependencies": {
+    "react": "^0.14.6"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

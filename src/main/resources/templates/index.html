@@ -3,8 +3,12 @@
 	<head>
 	    <title>Getting Started: Serving Web Content</title>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <script th:src="@{/node_modules/react/dist/react-with-addons.min.js}"></script>
 	</head>
 	<body>
-	    <div>YO</div>
+	    <div id="content">
+	        <!-- this is where the root react component will get rendered -->
+	    </div>
+	    <script th:src="@{/js/build.js}"></script>
 	</body>
 </html>
