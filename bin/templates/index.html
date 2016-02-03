@@ -1,14 +1,30 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-	<head>
-	    <title>Getting Started: Serving Web Content</title>
-	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	    <script th:src="@{/node_modules/react/dist/react-with-addons.min.js}"></script>
-	</head>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+	<head th:replace="fragments/HTML_head :: HTML_head"></head>
+	
 	<body>
-	    <div id="content">
-	        <!-- this is where the root react component will get rendered -->
+	
+		<div class="container-fluid">
+		
+		<div class="row">
+			<div class="col-md-12">
+			
+				<div id="content"></div>
+	    		
+	    		<div id="simple_input"></div>
+	    		
+	    		<div id="comment"></div>
+	    		
+	    	</div>
 	    </div>
-	    <script th:src="@{/js/build.js}"></script>
+	    	
+	    	
+		</div>
+	    
+	    <div th:replace="fragments/js_libraries :: js_libraries">&nbsp;</div>
+	    
 	</body>
+	
 </html>
