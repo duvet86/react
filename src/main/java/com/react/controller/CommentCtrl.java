@@ -12,13 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
 import com.react.model.Comment;
 
 @RestController
+@RequestMapping(value = "/api/")
 public class CommentCtrl {
 	
     private final AtomicLong counter = new AtomicLong();
     List<Comment> commentList = new ArrayList<Comment>();
     
     @RequestMapping(value = "/Comment", method = RequestMethod.GET)
-    public List<Comment> listComments() {
+    public List<Comment> getComments() {
+    	
+    	commentList.clear();
     	
     	commentList.add(new Comment(counter.incrementAndGet(),
                 					"Luca",

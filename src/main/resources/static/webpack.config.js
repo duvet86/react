@@ -1,9 +1,9 @@
 module.exports = {
-    entry: './react/index.jsx',
+    entry: './react-components/index.jsx',
     output: {
     	path: 'js/',
         filename: 'bundle.js',
-        //publicPath: 'http://localhost:3000/js'
+        publicPath: 'http://localhost:8090/js'
     },
     debug: true,
     module: {

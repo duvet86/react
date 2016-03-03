@@ -11,3 +11,10 @@ spring:
             
     thymeleaf:
         cache: false
+        
+logging:
+  level:
+    ROOT: INFO
+    org.apache.http: WARN
+    # turn up to DEBUG to diagnose GitHub API issues
+    org.apache.http.headers: WARN

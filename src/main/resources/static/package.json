@@ -4,7 +4,8 @@
   "description": "react demo project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors --port 8090"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,8 @@
     "keymirror": "^0.1.1",
     "object-assign": "^4.0.1",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
@@ -41,8 +43,12 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.2",
     "jsx-loader": "^0.13.2",
-    "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.1"
+    "vinyl-named": "^1.1.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.1.0"
   }
 }

@@ -12,6 +12,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	@Override
     public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/").setViewName("index");
+		registry.addViewController("/{path:[^\\.]*}").setViewName("index");
+		registry.addViewController("/repos/**").setViewName("index");
     }
 	
 	@Override
